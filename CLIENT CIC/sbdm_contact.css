@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: white;
+  }
+  
+  header {
+    position: relative;
+    background: url('images/landscaping4.jpeg') center center/cover no-repeat;
+    color: white;
+  }
+  
+  /* add an overlay */
+  header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+  }
+
+  nav,
+  .hero {
+    position: relative;
+    z-index: 1;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 30px;
+    background: transparent; 
+  }
+  
+  
+
+  .logo img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+  }
+  
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+    padding-left:70px;
+    gap: 90px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .nav-links a:hover{
+    color: #709b9d;
+  }
+  
+  .nav-icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-icons img {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.2s ease;
+  }
+  
+  .nav-icons img:hover {
+    transform: scale(1.2);
+  }
+
+  .hero {
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+  }
+  
+  /* --- Main Contact Section Container --- */
+  .contact-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;        /* Vertically center */
+    justify-content: center;    /* Horizontally center */
+    gap: 60px;
+    background-color: #f9f9f9; 
+    color: #000000;             
+    padding: 40px;
+    box-sizing: border-box;
+    flex-wrap: wrap;            /* Responsive for smaller screens */
+  }
+  
+  /* --- Contact Info (Left Side) --- */
+  .contact-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .contact-left p{
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* --- Form Section (Right Side) --- */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  /* --- Form Title Styling --- */
+  .contact-left-title h2 {
+    font-weight: 600;
+    color: #000000;
+    font-size: 40px;
+    margin-bottom: 5px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .contact-left-title hr {
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #000000;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* --- Input Fields --- */
+  .contact-inputs {
+    width: 100%;
+    height: 50px;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #000000;
+    border: 2px solid #ccc;
+    border-radius: 50px;
+    background-color: white;
+    box-sizing: border-box;
+  }
+  
+  textarea.contact-inputs {
+    height: 140px;
+    padding: 15px 25px;
+    border-radius: 20px;
+    resize: vertical;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* --- Input Focus & Placeholder --- */
+  .contact-inputs:focus {
+    border: 2px solid #889488;
+    outline: none;
+  }
+  
+  .contact-inputs::placeholder {
+    color: gray;
+  }
+
+  .whatsapp-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  
+  /* --- Submit Button --- */
+  .Submit {
+    width: 100%;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #000000;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #ddf6f7, #f4f2db);
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .Submit:hover {
+    background: linear-gradient(270deg, #f7f4d9, #e2f6f7);
+    transform: scale(1.05);
+  }
+  
+  .Submit:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #f7eb6c;
+  }
+
+
+
+
+
+  footer {
+    background-color: #709b9d;
+    text-align: center;
+    padding-top:5px;
+    padding-bottom:50px;
+  }
+  
+  .footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .social-icons {
+    margin-bottom: 15px;
+  }
+  
+  .social-icons a img {
+    width: 25px;
+    margin: 0 10px;
+    transition: transform 0.2s ease;
+  }
+
+  .social-icons img:hover{
+    transform: scale(1.2);
+  }
+
+  
+  footer p {
+    color: #fff;
+    font-size: 0.8rem;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  footer a:hover{
+    color: black;
+  }
+  
+  

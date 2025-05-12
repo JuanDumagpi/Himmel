@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: white;
+  }
+  
+  header {
+    position: relative;
+    background: url('images/living3.jpeg') center center/cover no-repeat;
+    color: white;
+  }
+  
+  /* add an overlay */
+  header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+  }
+
+  nav,
+  .hero {
+    position: relative;
+    z-index: 1;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 30px;
+    background: transparent; 
+  }
+  
+  
+
+  .logo img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+  }
+  
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+    padding-left:70px;
+    gap: 90px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .nav-links a:hover{
+    color: #709b9d;
+  }
+  
+  .nav-icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-icons img {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.2s ease;
+  }
+  
+  .nav-icons img:hover {
+    transform: scale(1.2);
+  }
+
+  .hero {
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+
+
+  /** MISSION AND VISION **/
+  .vision{
+    text-align: center;
+    margin-left: 400px;
+    margin-right: 400px;
+    padding-top:150px;
+    padding-bottom: 50px;
+  }
+
+  .vision h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    color: #709b9d;
+  }
+
+  .vision p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    color: #000;
+  }
+
+  .mission{
+    text-align: center;
+    background-color: #709b9d;
+  }
+
+  .mission h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    margin-left: 400px;
+    margin-right: 400px;
+    padding-top:50px;
+    padding-bottom: 10px;
+    color: white;
+  }
+
+  .mission p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    margin-left: 400px;
+    margin-right: 400px;
+    padding-bottom: 50px;
+    color: white;
+  }
+
+
+  /** THE TEAM SECTION **/
+  .team {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.heading {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.team-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  flex: 1;
+  max-width: 200px;
+  text-align: center;
+}
+
+.avatar img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.role {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.bio {
+  font-size: 13px;
+  color: #666;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.arrow {
+  border: 1px solid #000;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+
+  footer {
+    background-color: #709b9d;
+    text-align: center;
+    padding-top:5px;
+    padding-bottom:50px;
+  }
+  
+  .footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .social-icons {
+    margin-bottom: 15px;
+  }
+  
+  .social-icons a img {
+    width: 25px;
+    margin: 0 10px;
+    transition: transform 0.2s ease;
+  }
+
+  .social-icons img:hover{
+    transform: scale(1.2);
+  }
+
+  
+  footer p {
+    color: #fff;
+    font-size: 0.8rem;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  footer a:hover{
+    color: black;
+  }
+  
+
+  
