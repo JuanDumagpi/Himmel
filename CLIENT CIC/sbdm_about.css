@@ -7,169 +7,176 @@
   }
   
   body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background: white;
   }
   
   header {
-    position: relative;
-    background: url('images/living3.jpeg') center center/cover no-repeat;
-    color: white;
-  }
-  
-  /* add an overlay */
-  header::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.4);
-    z-index: 0;
-  }
+  position: relative;
+  background: url('images/living3.jpeg') center center/cover no-repeat;
+  color: white;
+}
 
-  nav,
-  .hero {
-    position: relative;
-    z-index: 1;
-  }
+/* Add an overlay */
+header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
 
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 60px 30px;
-    background: transparent; 
-  }
-  
-  
+nav,
+.hero {
+  position: relative;
+  z-index: 1;
+}
 
-  .logo img {
-    height: 40px;
-    width: auto;
-    object-fit: contain;
-  }
-  
-  
-  .nav-links {
-    display: flex;
-    align-items: center;
-    padding-left:70px;
-    gap: 90px;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-  }
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 30px;
+  background: transparent;
+}
 
-  .nav-links a:hover{
-    color: #709b9d;
-  }
-  
-  .nav-icons {
-    display: flex;
-    gap: 15px;
-  }
-  
-  .nav-icons img {
-    width: 20px;
-    height: 20px;
-    transition: transform 0.2s ease;
-  }
-  
-  .nav-icons img:hover {
-    transform: scale(1.2);
-  }
+.logo img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
 
-  .hero {
-    text-align: center;
-    padding: 100px 20px;
-  }
-  
-  
-  
-  .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    font-family: 'Poppins', sans-serif;
-  }
+.nav-links {
+  display: flex;
+  align-items: center;
+  padding-left: 70px;
+  gap: 90px;
+}
 
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
 
+.nav-links a:hover {
+  color: #709b9d;
+}
 
-  /** MISSION AND VISION **/
-  .vision{
-    text-align: center;
-    margin-left: 400px;
-    margin-right: 400px;
-    padding-top:150px;
-    padding-bottom: 50px;
-  }
+.nav-icons {
+  display: flex;
+  gap: 15px;
+}
 
-  .vision h2{
-    font-family: 'Poppins', sans-serif;
-    font-size: 3rem;
-    color: #709b9d;
-  }
+.nav-icons img {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.2s ease;
+}
 
-  .vision p{
-    font-family: 'Roboto', sans-serif;
-    font-size: 2rem;
-    color: #000;
-  }
+.nav-icons img:hover {
+  transform: scale(1.2);
+}
 
-  .mission{
-    text-align: center;
-    background-color: #709b9d;
-  }
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
 
-  .mission h2{
-    font-family: 'Poppins', sans-serif;
-    font-size: 3rem;
-    margin-left: 400px;
-    margin-right: 400px;
-    padding-top:50px;
-    padding-bottom: 10px;
-    color: white;
-  }
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
 
-  .mission p{
-    font-family: 'Roboto', sans-serif;
-    font-size: 2rem;
-    margin-left: 400px;
-    margin-right: 400px;
-    padding-bottom: 50px;
-    color: white;
-  }
+ /** MISSION AND VISION **/
+.vision {
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 50px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.vision h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  color: #709b9d;
+}
+
+.vision p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  color: #000;
+}
+
+.mission {
+  text-align: center;
+  background-color: #709b9d;
+  padding: 50px 20px;
+}
+
+.mission h2 {
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+}
+
+.mission p {
+  max-width: 800px;
+  margin: 0 auto;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+}
+
 
 
   /** THE TEAM SECTION **/
-  .team {
+.team {
   max-width: 1200px;
-  margin: auto;
+  margin: 60px auto;
+  padding: 0 20px;
   text-align: center;
 }
+
 
 .heading {
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 30px;
-  text-align: left;
+  text-align: center;
 }
 
 .team-grid {
   display: flex;
-  gap: 30px;
-  justify-content: space-between;
-  margin-bottom: 40px;
   flex-wrap: wrap;
+  gap: 20px; /* Reduced from 30px to 20px */
+  justify-content: center; /* Center team members if not filling the row */
+  margin-bottom: 40px;
 }
 
+
 .team-member {
-  flex: 1;
+  flex: 0 0 200px; /* Fixed width instead of growing */
   max-width: 200px;
   text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.team-member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
 
 .avatar img {
   width: 80px;
@@ -177,7 +184,9 @@
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* avatar shadow */
 }
+
 
 .name {
   font-weight: bold;
@@ -201,16 +210,6 @@
   margin-top: 20px;
 }
 
-.arrow {
-  border: 1px solid #000;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
 
 
 
@@ -261,4 +260,61 @@
   }
   
 
-  
+ /* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    padding: 40px 20px;
+  }
+
+  .nav-links {
+    padding-left: 40px;
+    gap: 50px;
+  }
+
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .nav-icons {
+    gap: 10px;
+  }
+
+  .logo img {
+    height: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .nav-links {
+    padding-left: 0;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .nav-icons {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .hero {
+    padding: 40px 20px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .logo img {
+    height: 30px;
+  }
+}
