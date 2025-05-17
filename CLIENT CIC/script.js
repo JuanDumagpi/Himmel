@@ -18,3 +18,17 @@ function nextSlide(){
 }
 
 setInterval(nextSlide, 4000);
+
+
+//This javascript code will make enlarge the picture when clicked on the gallery,
+//dim the background and create and X button which will close it.
+    document.querySelectorAll('.gallery img').forEach(photo =>{
+    photo.onclick = () =>{
+        document.querySelector('.popup-img').style.display = 'block';
+         document.querySelector('.popup-img img').src = photo.getAttribute('src');
+    }
+});
+
+    document.querySelector('.popup-img span').onclick = () => {
+        document.querySelector('.popup-img').style.display = 'none';
+    }
